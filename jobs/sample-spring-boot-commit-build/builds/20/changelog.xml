@@ -1,0 +1,11 @@
+commit 19be09e90746c7440a649a3cb513c1c55f974d66
+tree 55a1331f342182285bcfdaafc57016a265119cf3
+parent ea8d78b5b6a1024b67f3989a7b5386a023f14025
+author root <mvincent@sigma.fr> 2018-03-22 12:06:26 +0100
+committer root <mvincent@sigma.fr> 2018-03-22 12:06:26 +0100
+
+    	modified:   src/test/java/com/example/DemoApplicationTests.java
+
+
+
+:100644 100644 ce3e32a8c1f2c549900e7545c7b71048aed317db ed2c7ccf37d1e170d4b25be280da8f31364053d2 M	src/test/java/com/example/DemoApplicationTests.java

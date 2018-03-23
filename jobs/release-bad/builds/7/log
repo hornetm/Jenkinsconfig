@@ -1,0 +1,54 @@
+Started by user [8mha:////4L3tsnRPsefmDY0U8v8BjLb6Gr9PBjn9hDnRb+cK0K4/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/release-bad
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/hornetm/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/hornetm/sample-spring-boot.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/hornetm/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 801410e1646f3ee6cfb3c24504970ffb78eb244f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 801410e1646f3ee6cfb3c24504970ffb78eb244f
+Commit message: "modified:   bin/com/example/DemoApplicationTests.class modified:   src/test/java/com/example/DemoApplicationTests.java"
+ > git rev-list --no-walk 801410e1646f3ee6cfb3c24504970ffb78eb244f # timeout=10
+[release-bad] $ /bin/sh -xe /tmp/jenkins8597012899216262222.sh
++ sed -e s/<version>//g
++ grep -i SNAPSHOT pom.xml
++ sed -e s/<\/version>//g
++ cut -d - -f1
++ version=	0.0.1
++ echo 0.0.1
+0.0.1
++ mvn versions:set -DnewVersion= 0.0.1
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.2:set (default-cli) @ demo ---
+Enter the new version to set 0.0.1-SNAPSHOT: : [INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /var/lib/jenkins/workspace/release-bad
+[INFO] Processing change of com.example:demo:0.0.1-SNAPSHOT -> 0.0.1-SNAPSHOT
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.796 s
+[INFO] Finished at: 2018-03-22T16:01:15+01:00
+[INFO] Final Memory: 24M/175M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "0.0.1". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

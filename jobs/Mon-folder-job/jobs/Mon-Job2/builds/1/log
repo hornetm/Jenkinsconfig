@@ -1,0 +1,6 @@
+Started by user [8mha:////4L3tsnRPsefmDY0U8v8BjLb6Gr9PBjn9hDnRb+cK0K4/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/Mon-Job2
+[Mon-Job2] $ /bin/sh -xe /tmp/jenkins1298849977797646494.sh
++ pwd
+/var/lib/jenkins/workspace/Mon-Job2
+Finished: SUCCESS

@@ -1,0 +1,21 @@
+commit 893fe74dbddb77520e6e5030408dd39aee3a3f24
+tree 2390a1081d7147d1f60f6e4d2877117b5082391a
+parent 8308b351beac560e4248bd479ddfd8ed6a391068
+author inow <mvincent@sigma.fr> 2018-03-21 16:56:18 +0100
+committer inow <mvincent@sigma.fr> 2018-03-21 16:56:18 +0100
+
+    	new file:   .classpath 	new file:   .gitignore 	new file:   .project
+    	new file:   bin/com/example/DemoApplication.class 	new file:  
+    bin/com/example/DemoApplicationTests.class 	modified:  
+    src/main/java/com/example/DemoApplication.java 	modified:  
+    src/test/java/com/example/DemoApplicationTests.java
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 49e7e91b95a4717276932de5fe79f667debca7b6 A	.classpath
+:000000 100644 0000000000000000000000000000000000000000 eb5a316cbd195d26e3f768c7dd8e1b47299e17f8 A	.gitignore
+:000000 100644 0000000000000000000000000000000000000000 2edb098024eecdbaeb16b815c30be008f66599c1 A	.project
+:000000 100644 0000000000000000000000000000000000000000 dcf7fba2ac82c14240680e3335d02e9fb87ed68c A	bin/com/example/DemoApplication.class
+:000000 100644 0000000000000000000000000000000000000000 ceee484b254dfe40feb01e7cbeeda8b1facf2edb A	bin/com/example/DemoApplicationTests.class
+:100644 100644 6fce78941bba81eaf1ba30773f7944974b846574 1bf40ff805bb2b0e7ef160b5417fa439b06ab079 M	src/main/java/com/example/DemoApplication.java
+:100644 100644 5ad5ac2e17fb015256d2b6001d3e12fff1f42434 fe5d22e25ddb4af444c4c85c4eb9c96a5f4044eb M	src/test/java/com/example/DemoApplicationTests.java

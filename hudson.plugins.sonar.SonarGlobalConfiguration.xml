@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.sonar.SonarGlobalConfiguration plugin="sonar@2.6.1">
+  <installations>
+    <hudson.plugins.sonar.SonarInstallation>
+      <name>SonarJenkins</name>
+      <serverUrl>http://127.0.0.1:9000</serverUrl>
+      <serverVersion>5.3</serverVersion>
+      <serverAuthenticationToken>3086b24656e1815c14aea48f8ba50c71c4938007</serverAuthenticationToken>
+      <mojoVersion></mojoVersion>
+      <databaseUrl></databaseUrl>
+      <databaseLogin></databaseLogin>
+      <additionalProperties></additionalProperties>
+      <additionalAnalysisProperties></additionalAnalysisProperties>
+      <triggers>
+        <skipScmCause>false</skipScmCause>
+        <skipUpstreamCause>false</skipUpstreamCause>
+        <envVar></envVar>
+      </triggers>
+      <sonarLogin></sonarLogin>
+      <databaseSecret>{AQAAABAAAAAQnkCpKkA4k9ecwVFQtbljY5mzB/lti1QCyry2T5GDQDc=}</databaseSecret>
+      <sonarSecret>{AQAAABAAAAAQoPnTMu0QsbBeVzA4nYToFD3w3AzwkxzJRZOQss+lao4=}</sonarSecret>
+    </hudson.plugins.sonar.SonarInstallation>
+  </installations>
+  <buildWrapperEnabled>true</buildWrapperEnabled>
+</hudson.plugins.sonar.SonarGlobalConfiguration>

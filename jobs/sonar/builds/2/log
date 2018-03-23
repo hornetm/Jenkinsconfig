@@ -1,0 +1,146 @@
+Started by user [8mha:////4L3tsnRPsefmDY0U8v8BjLb6Gr9PBjn9hDnRb+cK0K4/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/sonar
+Cloning the remote Git repository
+Cloning repository https://github.com/hornetm/sample-spring-boot.git
+ > git init /var/lib/jenkins/workspace/sonar # timeout=10
+Fetching upstream changes from https://github.com/hornetm/sample-spring-boot.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/hornetm/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/hornetm/sample-spring-boot.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/hornetm/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/hornetm/sample-spring-boot.git
+ > git fetch --tags --progress https://github.com/hornetm/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 801410e1646f3ee6cfb3c24504970ffb78eb244f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 801410e1646f3ee6cfb3c24504970ffb78eb244f
+Commit message: "modified:   bin/com/example/DemoApplicationTests.class modified:   src/test/java/com/example/DemoApplicationTests.java"
+First time build. Skipping changelog.
+[sonar] $ mvn sonar:sonar
+[INFO] Scanning for projects...
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+976/976 B               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml (976 B at 0.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/3.4.0.905/sonar-maven-plugin-3.4.0.905.pom
+2/2 KB               Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/3.4.0.905/sonar-maven-plugin-3.4.0.905.pom (2 KB at 7.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom
+3/33 KB   6/33 KB   9/33 KB   11/33 KB   14/33 KB   16/33 KB   19/33 KB   22/33 KB   25/33 KB   27/33 KB   30/33 KB   32/33 KB   33/33 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom (33 KB at 183.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.4.0.905/sonar-maven-plugin-3.4.0.905.pom
+3/9 KB     5/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.4.0.905/sonar-maven-plugin-3.4.0.905.pom (9 KB at 88.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/41/parent-41.pom
+3/31 KB   5/31 KB   8/31 KB   11/31 KB   13/31 KB   16/31 KB   19/31 KB   21/31 KB   24/31 KB   27/31 KB   29/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/41/parent-41.pom (31 KB at 224.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.4.0.905/sonar-maven-plugin-3.4.0.905.jar
+3/43 KB    5/43 KB   8/43 KB   11/43 KB   13/43 KB   16/43 KB   19/43 KB   21/43 KB   24/43 KB   27/43 KB   29/43 KB   32/43 KB   36/43 KB   40/43 KB   43/43 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.4.0.905/sonar-maven-plugin-3.4.0.905.jar (43 KB at 298.3 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- sonar-maven-plugin:3.4.0.905:sonar (default-cli) @ demo ---
+Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom
+3/3 KB     3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom (3 KB at 27.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.10.0.1189/sonar-scanner-api-2.10.0.1189.pom
+3/6 KB   5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.10.0.1189/sonar-scanner-api-2.10.0.1189.pom (6 KB at 41.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api-parent/2.10.0.1189/sonar-scanner-api-parent-2.10.0.1189.pom
+3/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api-parent/2.10.0.1189/sonar-scanner-api-parent-2.10.0.1189.pom (5 KB at 42.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.10.0.1189/sonar-scanner-api-2.10.0.1189.jar
+3/28 KB   6/28 KB   9/28 KB   11/28 KB   14/28 KB   16/28 KB   19/28 KB   22/28 KB   25/28 KB   27/28 KB   28/28 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar (28 KB at 147.0 KB/sec)
+3/240 KB   5/240 KB   8/240 KB   3/568 KB   8/240 KB   5/568 KB   8/240 KB   8/568 KB   8/240 KB   8/568 KB   11/240 KB   11/568 KB   13/240 KB   11/568 KB   11/240 KB   13/568 KB   13/240 KB   16/568 KB   16/240 KB   13/568 KB   16/240 KB   16/568 KB   19/240 KB   16/568 KB   21/240 KB   19/568 KB   21/240 KB   21/568 KB   21/240 KB   21/568 KB   24/240 KB   21/568 KB   27/240 KB   21/568 KB   29/240 KB   24/568 KB   29/240 KB   24/568 KB   32/240 KB   27/568 KB   32/240 KB   29/568 KB   32/240 KB   32/568 KB   32/240 KB   32/568 KB   36/240 KB   32/568 KB   40/240 KB   32/568 KB   44/240 KB   32/568 KB   48/240 KB   36/568 KB   48/240 KB   40/568 KB   48/240 KB   44/568 KB   48/240 KB   48/568 KB   48/240 KB   48/568 KB   52/240 KB   48/568 KB   56/240 KB   48/568 KB   60/240 KB   48/568 KB   64/240 KB   48/568 KB   68/240 KB   48/568 KB   72/240 KB   48/568 KB   76/240 KB   48/568 KB   80/240 KB   52/568 KB   80/240 KB   56/568 KB   80/240 KB   60/568 KB   80/240 KB   64/568 KB   80/240 KB   68/568 KB   80/240 KB   72/568 KB   80/240 KB   76/568 KB   80/240 KB   80/568 KB   80/240 KB   80/568 KB   84/240 KB   80/568 KB   88/240 KB   80/568 KB   92/240 KB   80/568 KB   96/240 KB   80/568 KB   100/240 KB   80/568 KB   104/240 KB   80/568 KB   108/240 KB   80/568 KB   112/240 KB   84/568 KB   112/240 KB   88/568 KB   112/240 KB   92/568 KB   112/240 KB   96/568 KB   112/240 KB   96/568 KB   116/240 KB   96/568 KB   120/240 KB   96/568 KB   124/240 KB   96/568 KB   128/240 KB   96/568 KB   132/240 KB   96/568 KB   136/240 KB   96/568 KB   140/240 KB   96/568 KB   144/240 KB   100/568 KB   144/240 KB   104/568 KB   144/240 KB   108/568 KB   144/240 KB   112/568 KB   144/240 KB   116/568 KB   144/240 KB   120/568 KB   144/240 KB   124/568 KB   144/240 KB   128/568 KB   144/240 KB   132/568 KB   144/240 KB   136/568 KB   144/240 KB   140/568 KB   144/240 KB   144/568 KB   144/240 KB   144/568 KB   148/240 KB   144/568 KB   152/240 KB   144/568 KB   156/240 KB   144/568 KB   160/240 KB   144/568 KB   164/240 KB   144/568 KB   168/240 KB   144/568 KB   172/240 KB   144/568 KB   176/240 KB   144/568 KB   180/240 KB   144/568 KB   184/240 KB   144/568 KB   188/240 KB   144/568 KB   192/240 KB   144/568 KB   196/240 KB   144/568 KB   200/240 KB   144/568 KB   204/240 KB   144/568 KB   208/240 KB   148/568 KB   208/240 KB   152/568 KB   208/240 KB   156/568 KB   208/240 KB   160/568 KB   208/240 KB   160/568 KB   212/240 KB   160/568 KB   216/240 KB   160/568 KB   220/240 KB   160/568 KB   224/240 KB   164/568 KB   224/240 KB   168/568 KB   224/240 KB   172/568 KB   224/240 KB   176/568 KB   224/240 KB   180/568 KB   224/240 KB   184/568 KB   224/240 KB   188/568 KB   224/240 KB   192/568 KB   224/240 KB   196/568 KB   224/240 KB   200/568 KB   224/240 KB   204/568 KB   224/240 KB   208/568 KB   224/240 KB   212/568 KB   224/240 KB   216/568 KB   224/240 KB   220/568 KB   224/240 KB   224/568 KB   224/240 KB   228/568 KB   224/240 KB   232/568 KB   224/240 KB   236/568 KB   224/240 KB   240/568 KB   224/240 KB   240/568 KB   228/240 KB   240/568 KB   232/240 KB   240/568 KB   236/240 KB   240/568 KB   240/240 KB   244/568 KB   240/240 KB   248/568 KB   240/240 KB   252/568 KB   240/240 KB   256/568 KB   240/240 KB   260/568 KB   240/240 KB   264/568 KB   240/240 KB   268/568 KB   240/240 KB   272/568 KB   240/240 KB   276/568 KB   240/240 KB   280/568 KB   240/240 KB   284/568 KB   240/240 KB   288/568 KB   240/240 KB   292/568 KB   240/240 KB   296/568 KB   240/240 KB   300/568 KB   240/240 KB   304/568 KB   240/240 KB   308/568 KB   240/240 KB   312/568 KB   240/240 KB   316/568 KB   240/240 KB   320/568 KB   240/240 KB   324/568 KB   240/240 KB   328/568 KB   240/240 KB   332/568 KB   240/240 KB   336/568 KB   240/240 KB   340/568 KB   240/240 KB   344/568 KB   240/240 KB   348/568 KB   240/240 KB   352/568 KB   240/240 KB   356/568 KB   240/240 KB   360/568 KB   240/240 KB   364/568 KB   240/240 KB   368/568 KB   240/240 KB   372/568 KB   240/240 KB   376/568 KB   240/240 KB   380/568 KB   240/240 KB   384/568 KB   240/240 KB   388/568 KB   240/240 KB   392/568 KB   240/240 KB   396/568 KB   240/240 KB   400/568 KB   240/240 KB   404/568 KB   240/240 KB   408/568 KB   240/240 KB   412/568 KB   240/240 KB   416/568 KB   240/240 KB   420/568 KB   240/240 KB   424/568 KB   240/240 KB   428/568 KB   240/240 KB   432/568 KB   240/240 KB   436/568 KB   240/240 KB   440/568 KB   240/240 KB   444/568 KB   240/240 KB   448/568 KB   240/240 KB   452/568 KB   240/240 KB   456/568 KB   240/240 KB   460/568 KB   240/240 KB   464/568 KB   240/240 KB   468/568 KB   240/240 KB   472/568 KB   240/240 KB   476/568 KB   240/240 KB   480/568 KB   240/240 KB   484/568 KB   240/240 KB   488/568 KB   240/240 KB   492/568 KB   240/240 KB   496/568 KB   240/240 KB   500/568 KB   240/240 KB   504/568 KB   240/240 KB   508/568 KB   240/240 KB   512/568 KB   240/240 KB                             Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar (240 KB at 390.8 KB/sec)
+516/568 KB                520/568 KB   524/568 KB   528/568 KB   532/568 KB   536/568 KB   540/568 KB   544/568 KB   548/568 KB   552/568 KB   556/568 KB   560/568 KB   564/568 KB   568/568 KB   568/568 KB                Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.10.0.1189/sonar-scanner-api-2.10.0.1189.jar (568 KB at 819.5 KB/sec)
+[INFO] User cache: /var/lib/jenkins/.sonar/cache
+[INFO] SonarQube version: 6.7.2
+[INFO] Default locale: "en_US", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=577ms
+[INFO] Server id: AWJSKRcpWQuUJR2Mn3qW
+[INFO] User cache: /var/lib/jenkins/.sonar/cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=1304ms
+[INFO] Download sonar-flex-plugin-2.3.jar
+[INFO] Download sonar-csharp-plugin-6.5.0.3766.jar
+[INFO] Download sonar-javascript-plugin-3.2.0.5506.jar
+[INFO] Download sonar-java-plugin-4.15.0.12310.jar
+[INFO] Download sonar-php-plugin-2.11.0.2485.jar
+[INFO] Download sonar-python-plugin-1.8.0.1496.jar
+[INFO] Download sonar-scm-git-plugin-1.3.0.869.jar
+[INFO] Download sonar-scm-svn-plugin-1.6.0.860.jar
+[INFO] Download sonar-typescript-plugin-1.1.0.1079.jar
+[INFO] Download sonar-xml-plugin-1.4.3.1027.jar
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=97ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=792ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=7307ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=191ms
+[INFO] Project key: com.example:demo
+[INFO] -------------  Scan demo
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=672ms
+[INFO] Base dir: /var/lib/jenkins/workspace/sonar
+[INFO] Working dir: /var/lib/jenkins/workspace/sonar/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: en_US
+[INFO] Index files
+[INFO] 3 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=161ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=36ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=5574ms
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=339ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=8067ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/var/lib/jenkins/workspace/sonar/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=17ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=4218ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] Sensor XML Sensor [xml] (done) | time=1828ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=102ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=515ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=124ms
+[INFO] SCM provider for this project is: git
+[INFO] 3 files to be analyzed
+[INFO] 3/3 files analyzed
+[INFO] Calculating CPD for 1 file
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 448ms, dir size=40 KB
+[INFO] Analysis reports compressed in 141ms, zip size=14 KB
+[INFO] Analysis report uploaded in 3845ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/com.example:demo
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://localhost:9000/api/ce/task?id=AWJSP9CNWQuUJR2Mn4f7
+[INFO] Task total time: 44.890 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:12 min
+[INFO] Finished at: 2018-03-23T10:45:37+01:00
+[INFO] Final Memory: 40M/331M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

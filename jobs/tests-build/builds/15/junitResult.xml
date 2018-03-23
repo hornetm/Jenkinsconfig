@@ -1,0 +1,74 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.24">
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/workspace/tests-build/target/surefire-reports/TEST-com.example.DemoApplicationTests.xml</file>
+      <name>com.example.DemoApplicationTests</name>
+      <duration>0.115</duration>
+      <time>0.115</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>0.075</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>addition</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.006</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testDivision2</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.009</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testDivision3</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testDivision4</testName>
+          <skipped>true</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>soustraire</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError: expected:&lt;1.0&gt; but was:&lt;7.0&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:553)
+	at org.junit.Assert.assertEquals(Assert.java:683)
+	at com.example.DemoApplicationTests.soustraire(DemoApplicationTests.java:62)
+</errorStackTrace>
+          <errorDetails>expected:&lt;1.0&gt; but was:&lt;7.0&gt;</errorDetails>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testDivision</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.002</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>contextLoads</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.115</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

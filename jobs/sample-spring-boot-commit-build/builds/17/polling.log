@@ -1,0 +1,9 @@
+Started on Mar 22, 2018 11:59:05 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision d8be6f330100cae7ccf3fafead3dff0336e4f29b (refs/remotes/origin/master)
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/hornetm/sample-spring-boot.git # timeout=10
+Found 1 remote heads on https://github.com/hornetm/sample-spring-boot.git
+[poll] Latest remote head revision on refs/heads/master is: d07327ec1db8714c18bf5948882c824d4749f967
+Done. Took 6.3 sec
+Changes found

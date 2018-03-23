@@ -1,0 +1,107 @@
+Started by user [8mha:////4L3tsnRPsefmDY0U8v8BjLb6Gr9PBjn9hDnRb+cK0K4/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/sonar
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/hornetm/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/hornetm/sample-spring-boot.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/hornetm/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f07f2e9f4dceccf25ec4b1f776b0f2a2bbd3b97c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f07f2e9f4dceccf25ec4b1f776b0f2a2bbd3b97c
+Commit message: "	modified:   bin/com/example/DemoApplicationTests.class 	modified:   src/test/java/com/example/DemoApplicationTests.java"
+ > git rev-list --no-walk 801410e1646f3ee6cfb3c24504970ffb78eb244f # timeout=10
+[sonar] $ mvn sonar:sonar
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- sonar-maven-plugin:3.4.0.905:sonar (default-cli) @ demo ---
+[INFO] User cache: /var/lib/jenkins/.sonar/cache
+[INFO] SonarQube version: 6.7.2
+[INFO] Default locale: "en_US", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=327ms
+[INFO] Server id: AWJSKRcpWQuUJR2Mn3qW
+[INFO] User cache: /var/lib/jenkins/.sonar/cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=273ms
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=327ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=112ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=1897ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=115ms
+[INFO] Project key: com.example:demo
+[INFO] -------------  Scan demo
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=591ms
+[INFO] Base dir: /var/lib/jenkins/workspace/sonar
+[INFO] Working dir: /var/lib/jenkins/workspace/sonar/target/sonar
+[INFO] Source paths: pom.xml, src/main/java
+[INFO] Test paths: src/test/java
+[INFO] Source encoding: UTF-8, default locale: en_US
+[INFO] Index files
+[INFO] 3 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=44ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=6ms
+[INFO] Java Main Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=2157ms
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=232ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=4678ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/var/lib/jenkins/workspace/sonar/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=11ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=2088ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=480ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=25ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=87ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=56ms
+[INFO] SCM provider for this project is: git
+[INFO] 1 files to be analyzed
+[INFO] 1/1 files analyzed
+[INFO] Calculating CPD for 1 file
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 292ms, dir size=39 KB
+[INFO] Analysis reports compressed in 90ms, zip size=13 KB
+[INFO] Analysis report uploaded in 175ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/com.example:demo
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://localhost:9000/api/ce/task?id=AWJSU12-WQuUJR2Mn4f8
+[INFO] Task total time: 19.735 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 31.869 s
+[INFO] Finished at: 2018-03-23T11:06:58+01:00
+[INFO] Final Memory: 40M/293M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

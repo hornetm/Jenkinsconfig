@@ -1,0 +1,10 @@
+Started on Mar 23, 2018 11:47:11 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision f07f2e9f4dceccf25ec4b1f776b0f2a2bbd3b97c (refs/remotes/origin/master)
+Selected Git installation does not exist. Using Default
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/hornetm/sample-spring-boot.git # timeout=10
+Found 1 remote heads on https://github.com/hornetm/sample-spring-boot.git
+[poll] Latest remote head revision on refs/heads/master is: f07f2e9f4dceccf25ec4b1f776b0f2a2bbd3b97c - already built by 23
+Done. Took 0.77 sec
+No changes

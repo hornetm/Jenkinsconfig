@@ -1,0 +1,1037 @@
+Started by user [8mha:////4L3tsnRPsefmDY0U8v8BjLb6Gr9PBjn9hDnRb+cK0K4/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/tests-build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/hornetm/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/hornetm/sample-spring-boot.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/hornetm/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d07327ec1db8714c18bf5948882c824d4749f967 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d07327ec1db8714c18bf5948882c824d4749f967
+Commit message: "	modified:   bin/com/example/DemoApplication.class 	modified:   src/main/java/com/example/DemoApplication.java"
+ > git rev-list --no-walk d8be6f330100cae7ccf3fafead3dff0336e4f29b # timeout=10
+[tests-build] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn clean verify
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ demo ---
+[INFO] Deleting /var/lib/jenkins/workspace/tests-build/target
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ demo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/tests-build/target/classes
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/tests-build/src/test/resources
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ demo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/tests-build/target/test-classes
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ demo ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/tests-build/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+11:57:24.990 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+11:57:25.010 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:57:25.037 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:57:25.100 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:57:25.164 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
+11:57:25.180 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
+11:57:25.185 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
+11:57:25.187 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:57:25.189 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:57:25.286 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
+11:57:25.302 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+11:57:25.306 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+11:57:25.307 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+11:57:25.350 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/example/] to resources [URL [file:/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/], URL [file:/var/lib/jenkins/workspace/tests-build/target/classes/com/example/]]
+11:57:25.351 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example]
+11:57:25.351 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example] for files matching pattern [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/*.class]
+11:57:25.357 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/var/lib/jenkins/workspace/tests-build/target/classes/com/example]
+11:57:25.357 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/var/lib/jenkins/workspace/tests-build/target/classes/com/example] for files matching pattern [/var/lib/jenkins/workspace/tests-build/target/classes/com/example/*.class]
+11:57:25.359 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/example/*.class] to resources [file [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/DemoApplicationTests.class], file [/var/lib/jenkins/workspace/tests-build/target/classes/com/example/DemoApplication.class]]
+11:57:25.490 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/var/lib/jenkins/workspace/tests-build/target/classes/com/example/DemoApplication.class]
+11:57:25.494 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.DemoApplicationTests
+11:57:25.506 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.DemoApplicationTests]: using defaults.
+11:57:25.521 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+11:57:25.561 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+11:57:25.564 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+11:57:25.569 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+11:57:25.571 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3578436e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@706a04ae, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6eceb130, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@10a035a0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@67b467e9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47db50c5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5c072e3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4d1b0d2a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@954b04f]
+11:57:25.579 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+11:57:25.580 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+Running com.example.DemoApplicationTests
+11:57:25.594 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+11:57:25.596 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:57:25.601 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:57:25.605 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:57:25.608 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
+11:57:25.617 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
+11:57:25.618 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
+11:57:25.619 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:57:25.623 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:57:25.651 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
+11:57:25.652 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+11:57:25.654 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+11:57:25.655 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+11:57:25.655 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.DemoApplicationTests
+11:57:25.668 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.DemoApplicationTests]: using defaults.
+11:57:25.676 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+11:57:25.692 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+11:57:25.694 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+11:57:25.701 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+11:57:25.701 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@57f23557, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d0f8e03, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6366ebe0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@44f75083, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2698dc7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@43d7741f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@17baae6e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69379752, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@27fe3806]
+11:57:25.702 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+11:57:25.703 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+11:57:25.706 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+11:57:25.707 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+11:57:25.722 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@17695df3 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6c9f5c0d testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@7085bdee, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6fd02e5, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1e127982], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+11:57:25.726 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+11:57:25.727 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+11:57:25.735 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@17695df3 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@f4168b8, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6c9f5c0d testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@7085bdee, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6fd02e5, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1e127982], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+11:57:25.928 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+11:57:25.929 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+11:57:25.934 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+11:57:25.937 [main] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
+11:57:25.950 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+11:57:25.952 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2018-03-22 11:57:26.850  INFO 9215 --- [           main] com.example.DemoApplicationTests         : Starting DemoApplicationTests on ubuntu with PID 9215 (started by jenkins in /var/lib/jenkins/workspace/tests-build)
+2018-03-22 11:57:26.853  INFO 9215 --- [           main] com.example.DemoApplicationTests         : No active profile set, falling back to default profiles: default
+2018-03-22 11:57:26.968  INFO 9215 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@66d18979: startup date [Thu Mar 22 11:57:26 CET 2018]; root of context hierarchy
+2018-03-22 11:57:28.598  INFO 9215 --- [           main] com.example.DemoApplicationTests         : Started DemoApplicationTests in 2.632 seconds (JVM running for 4.641)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 3.144 sec - in com.example.DemoApplicationTests
+2018-03-22 11:57:28.791  INFO 9215 --- [       Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@66d18979: startup date [Thu Mar 22 11:57:26 CET 2018]; root of context hierarchy
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ demo ---
+[INFO] Building jar: /var/lib/jenkins/workspace/tests-build/target/demo-0.0.1-SNAPSHOT.jar
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:1.5.3.RELEASE:repackage (default) @ demo ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.819 s
+[INFO] Finished at: 2018-03-22T11:57:31+01:00
+[INFO] ------------------------------------------------------------------------
+[tests-build] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn cobertura:cobertura -Dcobertura.report.format=xml
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> cobertura-maven-plugin:2.7:cobertura (default-cli) > [cobertura]test @ demo >>>
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ demo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- cobertura-maven-plugin:2.7:instrument (default-cli) @ demo ---
+[INFO] Cobertura 2.1.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Cobertura: Saved information on 1 classes.
+[INFO] Cobertura: Saved information on 1 classes.
+
+[8mha:////4Kx5xxIW+ARHUojydmminAZ46VDkSYwVcMOv9ppVP+3dAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+[INFO] Instrumentation was successful.
+[INFO] NOT adding cobertura ser file to attached artifacts list.
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/tests-build/src/test/resources
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ demo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ demo ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/tests-build/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+[DEBUG] SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+[DEBUG] Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[DEBUG] Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+[DEBUG] Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+[INFO] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
+[DEBUG] Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
+[DEBUG] Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
+[INFO] Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[DEBUG] Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
+[DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[DEBUG] Resolved classpath location [com/example/] to resources [URL [file:/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/], URL [file:/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example/]]
+[DEBUG] Looking for matching resources in directory tree [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example]
+[DEBUG] Searching directory [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example] for files matching pattern [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/*.class]
+[DEBUG] Looking for matching resources in directory tree [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example]
+[DEBUG] Searching directory [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example] for files matching pattern [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example/*.class]
+[DEBUG] Resolved location pattern [classpath*:com/example/*.class] to resources [file [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/DemoApplicationTests.class], file [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example/DemoApplication.class]]
+[DEBUG] Identified candidate component class: file [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example/DemoApplication.class]
+[INFO] Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.DemoApplicationTests
+[DEBUG] @TestExecutionListeners is not present for class [com.example.DemoApplicationTests]: using defaults.
+[INFO] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+[INFO] Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+[INFO] Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/web/context/request/RequestAttributes]
+[INFO] Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@780cb77, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@691a7f8f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@50a7bc6e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@161b062a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@17c1bced, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2d9d4f9d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4034c28c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@e50a6f6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@14ec4505]
+[DEBUG] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+[DEBUG] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+Running com.example.DemoApplicationTests
+[DEBUG] SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+[DEBUG] Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[DEBUG] Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+[DEBUG] Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+[INFO] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
+[DEBUG] Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
+[DEBUG] Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
+[INFO] Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[INFO] Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[DEBUG] Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
+[DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[INFO] Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.DemoApplicationTests
+[DEBUG] @TestExecutionListeners is not present for class [com.example.DemoApplicationTests]: using defaults.
+[INFO] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+[INFO] Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+[INFO] Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/web/context/request/RequestAttributes]
+[INFO] Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78b729e6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6b4a4e18, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27c86f2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@197d671, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@402e37bc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@79ad8b2f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1df82230, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@22635ba0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13c10b87]
+[DEBUG] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+[DEBUG] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+[DEBUG] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+[DEBUG] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+[DEBUG] Before test class: context [DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+[DEBUG] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+[DEBUG] Performing dependency injection for test context [[DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@38c5cc4c, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+[DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[DEBUG] Adding [inline] PropertySource with highest search precedence
+[DEBUG] Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+[DEBUG] Adding [Inlined Test Properties] PropertySource with highest search precedence
+[DEBUG] Application started with classpath: [file:/var/lib/jenkins/workspace/tests-build/target/surefire/surefirebooter1800045095079055654.jar]
+[DEBUG] Could not find key 'context.listener.classes' in any property source
+[DEBUG] Could not find key 'banner.image.location' in any property source
+[DEBUG] Could not find key 'banner.location' in any property source
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+[DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[DEBUG] Could not find key 'context.initializer.classes' in any property source
+[DEBUG] Could not find key 'spring.config.name:application' in any property source
+[DEBUG] Could not find key 'spring.config.name' in any property source
+[DEBUG] Could not find key 'vcap.application.name:application' in any property source
+[DEBUG] Could not find key 'vcap.application.name' in any property source
+[DEBUG] Could not find key 'spring.application.name:application' in any property source
+[DEBUG] Could not find key 'spring.application.name' in any property source
+[DEBUG] Could not find key 'PORT:null' in any property source
+[DEBUG] Could not find key 'PORT' in any property source
+[DEBUG] Could not find key 'server.port:null' in any property source
+[DEBUG] Found key 'server.port' in [Inlined Test Properties] with type [String]
+[DEBUG] Could not find key 'spring.application.index:-1' in any property source
+[DEBUG] Could not find key 'spring.application.index' in any property source
+[DEBUG] Could not find key 'vcap.application.instance_index:-1' in any property source
+[DEBUG] Could not find key 'vcap.application.instance_index' in any property source
+[DEBUG] Could not find key 'spring.profiles.active' in any property source
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[INFO] Starting DemoApplicationTests on ubuntu with PID 9290 (started by jenkins in /var/lib/jenkins/workspace/tests-build)
+[DEBUG] Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+[DEBUG] Could not find key 'spring.profiles.active' in any property source
+[DEBUG] Could not find key 'spring.profiles.default' in any property source
+[INFO] No active profile set, falling back to default profiles: default
+[DEBUG] Loading source class com.example.DemoApplication
+[DEBUG] Skipped (empty) config file 'file:/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/application.properties' (classpath:/application.properties)
+[DEBUG] Skipped (empty) config file 'file:/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/application.properties' (classpath:/application.properties) for profile default
+[INFO] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@306cf3ea: startup date [Thu Mar 22 11:57:47 CET 2018]; root of context hierarchy
+[DEBUG] Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@306cf3ea: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b11171f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor,org.springframework.boot.test.mock.mockito.MockitoPostProcessor,demoApplication]; root of factory hierarchy
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+[DEBUG] Creating instance of bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+[DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG] Resolved classpath location [com/example/] to resources [URL [file:/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/], URL [file:/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example/]]
+[DEBUG] Looking for matching resources in directory tree [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example]
+[DEBUG] Searching directory [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example] for files matching pattern [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/**/*.class]
+[DEBUG] Looking for matching resources in directory tree [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example]
+[DEBUG] Searching directory [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example] for files matching pattern [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example/**/*.class]
+[DEBUG] Resolved location pattern [classpath*:com/example/**/*.class] to resources [file [/var/lib/jenkins/workspace/tests-build/target/test-classes/com/example/DemoApplicationTests.class], file [/var/lib/jenkins/workspace/tests-build/target/generated-classes/cobertura/com/example/DemoApplication.class]]
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.context.filter.TestTypeExcludeFilter'
+[DEBUG] Could not find key 'spring.boot.enableautoconfiguration' in any property source
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Could not find key 'spring.messages.basename' in any property source
+[DEBUG] Resolved classpath location [messages.properties] to resources []
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Found key 'spring.jmx.enabled' in [Inlined Test Properties] with type [String]
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Registered bean definition for imported class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+[DEBUG] Creating instance of bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Registering bean definition for @Bean method org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer()
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Registered bean definition for imported class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+[DEBUG] Registered bean definition for imported class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Could not find key 'spring.info.build.location:classpath:META-INF/build-info.properties' in any property source
+[DEBUG] Could not find key 'spring.info.build.location' in any property source
+[DEBUG] Returning cached instance of singleton bean 'autoConfigurationReport'
+[DEBUG] Registered bean definition for imported class 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration'
+[DEBUG] Successfully enhanced com.example.DemoApplication; enhanced class name is: com.example.DemoApplication$$EnhancerBySpringCGLIB$$9440601f
+[DEBUG] Replacing bean definition 'demoApplication' existing class 'com.example.DemoApplication' with enhanced class 'com.example.DemoApplication$$EnhancerBySpringCGLIB$$9440601f'
+[DEBUG] Successfully enhanced org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$9404217
+[DEBUG] Replacing bean definition 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$9404217'
+[DEBUG] Successfully enhanced org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$9404217
+[DEBUG] Replacing bean definition 'propertySourcesPlaceholderConfigurer' existing class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$9404217'
+[DEBUG] Successfully enhanced org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$f8135b2c
+[DEBUG] Replacing bean definition 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$f8135b2c'
+[DEBUG] Successfully enhanced org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$4483dcf7
+[DEBUG] Replacing bean definition 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$4483dcf7'
+[DEBUG] Successfully enhanced org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$$EnhancerBySpringCGLIB$$1928f491
+[DEBUG] Replacing bean definition 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$$EnhancerBySpringCGLIB$$1928f491'
+[DEBUG] Removing [applicationConfigurationProperties] PropertySource
+[DEBUG] Removing [defaultProperties] PropertySource
+[DEBUG] Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+[DEBUG] Creating instance of bean 'propertySourcesPlaceholderConfigurer'
+[DEBUG] Eagerly caching bean 'propertySourcesPlaceholderConfigurer' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'propertySourcesPlaceholderConfigurer'
+[DEBUG] Adding [environmentProperties] PropertySource with lowest search precedence
+[DEBUG] Adding [localProperties] PropertySource with lowest search precedence
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+[DEBUG] Creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store'
+[DEBUG] Creating instance of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+[DEBUG] Creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[DEBUG] Creating instance of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[DEBUG] Eagerly caching bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' to allow for resolving potential circular references
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store'
+[DEBUG] Invoking afterPropertiesSet() on bean with name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[DEBUG] Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer$PropertyMappingCheckBeanPostProcessor'
+[DEBUG] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2c78d320]
+[DEBUG] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@132e0cc]
+[DEBUG] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b11171f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor,org.springframework.boot.test.mock.mockito.MockitoPostProcessor,demoApplication,org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory,org.springframework.boot.autoconfigure.AutoConfigurationPackages,org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration,org.springframework.boot.autoconfigure.condition.BeanTypeRegistry,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store,org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration,spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties,org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration]; root of factory hierarchy
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[DEBUG] Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+[DEBUG] Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG] Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG] Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+[DEBUG] Creating shared instance of singleton bean 'demoApplication'
+[DEBUG] Creating instance of bean 'demoApplication'
+[DEBUG] Eagerly caching bean 'demoApplication' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'demoApplication'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+[DEBUG] Creating instance of bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+[DEBUG] Creating instance of bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+[DEBUG] Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+[DEBUG] Creating instance of bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+[DEBUG] Creating instance of bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+[DEBUG] Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$4483dcf7] - unable to determine constructor/method parameter names
+[DEBUG] Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[DEBUG] Creating instance of bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[DEBUG] Registered injected element on class [org.springframework.boot.autoconfigure.info.ProjectInfoProperties]: AutowiredMethodElement for void org.springframework.boot.autoconfigure.info.ProjectInfoProperties.setDefaultGitLocation(org.springframework.core.io.Resource)
+[DEBUG] Eagerly caching bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties' to allow for resolving potential circular references
+[DEBUG] Processing injected element of bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties': AutowiredMethodElement for void org.springframework.boot.autoconfigure.info.ProjectInfoProperties.setDefaultGitLocation(org.springframework.core.io.Resource)
+[DEBUG] Could not find key 'spring.git.properties:classpath:git.properties' in any property source
+[DEBUG] Could not find key 'spring.git.properties:classpath:git.properties' in any property source
+[DEBUG] Could not find key 'spring.git.properties' in any property source
+[DEBUG] Could not find key 'spring.git.properties' in any property source
+[DEBUG] Processing injected element of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': AutowiredMethodElement for public void org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.setConverters(java.util.List)
+[DEBUG] Processing injected element of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': AutowiredMethodElement for public void org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.setGenericConverters(java.util.List)
+[DEBUG] Adding [Inlined Test Properties] PropertySource with lowest search precedence
+[DEBUG] Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG] Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG] Adding [random] PropertySource with lowest search precedence
+[DEBUG] Adding [localProperties] PropertySource with lowest search precedence
+[DEBUG] Finished creating instance of bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[DEBUG] Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+[DEBUG] Returning cached instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration'
+[DEBUG] Creating instance of bean 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration'
+[DEBUG] Eagerly caching bean 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration' to allow for resolving potential circular references
+[DEBUG] Finished creating instance of bean 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@484094a5]
+[DEBUG] Returning cached instance of singleton bean 'lifecycleProcessor'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[DEBUG] 
+
+
+=========================
+AUTO-CONFIGURATION REPORT
+=========================
+
+
+Positive matches:
+-----------------
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   RedisCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration automatic cache type (CacheCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.ConnectionFactory', 'org.apache.activemq.ActiveMQConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.aspectj.lang.annotation.Aspect', 'org.aspectj.lang.reflect.Advice' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.ConnectionFactory', 'org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.batch.core.launch.JobLauncher', 'org.springframework.jdbc.core.JdbcOperations' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerJpaDependencyConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.github.benmanes.caffeine.cache.Caffeine', 'org.springframework.cache.caffeine.CaffeineCacheManager' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.datastax.driver.core.Cluster', 'org.springframework.data.cassandra.core.CassandraAdminOperations' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.datastax.driver.core.Session', 'org.springframework.data.cassandra.repository.CassandraRepository' (OnClassCondition)
+
+   CloudAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.config.java.CloudScanConfiguration' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.CouchbaseBucket', 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'com.couchbase.client.spring.cache.CouchbaseCacheManager' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.CouchbaseRepository' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.CouchbaseRepository' (OnClassCondition)
+
+   DataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   DeviceDelegatingViewResolverAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.mobile.device.view.LiteDeviceDelegatingViewResolver' (OnClassCondition)
+
+   DeviceResolverAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.mobile.device.DeviceResolverHandlerInterceptor', 'org.springframework.mobile.device.DeviceHandlerMethodArgumentResolver' (OnClassCondition)
+
+   DispatcherServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   EhCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'net.sf.ehcache.Cache', 'org.springframework.cache.ehcache.EhCacheCacheManager' (OnClassCondition)
+
+   ElasticsearchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.client.TransportClientFactoryBean', 'org.springframework.data.elasticsearch.client.NodeClientFactoryBean' (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.repository.ElasticsearchRepository' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedMongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.Mongo', 'de.flapdoodle.embed.mongo.MongodStarter' (OnClassCondition)
+
+   EmbeddedServletContainerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication (required) did not find web application classes (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   FacebookAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.social.config.annotation.SocialConfigurerAdapter', 'org.springframework.social.facebook.connect.FacebookConnectionFactory' (OnClassCondition)
+
+   FallbackWebSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'freemarker.template.Configuration', 'org.springframework.ui.freemarker.FreeMarkerConfigurationFactory' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   GuavaCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.google.common.cache.CacheBuilder', 'org.springframework.cache.guava.GuavaCacheManager' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.WebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.hazelcast.core.HazelcastInstance', 'com.hazelcast.spring.cache.HazelcastCacheManager' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.hazelcast.core.HazelcastInstance', 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+
+   HibernateJpaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean', 'javax.persistence.EntityManager' (OnClassCondition)
+
+   HttpEncodingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.hateoas.Resource', 'org.springframework.web.bind.annotation.RequestMapping', 'org.springframework.plugin.core.Plugin' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.cache.Caching', 'org.springframework.cache.jcache.JCacheCacheManager' (OnClassCondition)
+
+   JacksonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JdbcTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.glassfish.jersey.server.spring.SpringComponentProvider', 'javax.servlet.ServletRegistration' (OnClassCondition)
+
+   JestAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.searchbox.client.JestClient' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.Message', 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.jmx.enabled=true) found different value in property 'enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.transaction.Transaction' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LinkedInAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.social.config.annotation.SocialConfigurerAdapter', 'org.springframework.social.linkedin.connect.LinkedInConnectionFactory' (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'liquibase.integration.spring.SpringLiquibase' (OnClassCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.mail.internet.MimeMessage' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mail.test-connection) did not find property 'test-connection' (OnPropertyCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.Mongo', 'org.springframework.data.mongodb.core.MongoTemplate' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.Mongo', 'org.springframework.data.mongodb.repository.MongoRepository' (OnClassCondition)
+
+   MultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'javax.servlet.MultipartConfigElement' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.neo4j.ogm.session.SessionFactory', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.neo4j.ogm.session.Neo4jSession', 'org.springframework.data.neo4j.repository.GraphRepository' (OnClassCondition)
+
+   OAuth2AutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.oauth2.common.OAuth2AccessToken', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.amqp.rabbit.core.RabbitTemplate', 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'reactor.spring.context.config.EnableReactor', 'reactor.Environment' (OnClassCondition)
+
+   RedisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.data.redis.connection.jedis.JedisConnection', 'org.springframework.data.redis.core.RedisOperations', 'redis.clients.jedis.Jedis' (OnClassCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'redis.clients.jedis.Jedis', 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   SecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.authentication.AuthenticationManager', 'org.springframework.security.config.annotation.authentication.configurers.GlobalAuthenticationConfigurerAdapter' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer', 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServerPropertiesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication (required) did not find web application classes (OnWebApplicationCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SitePreferenceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.mobile.device.site.SitePreferenceHandlerInterceptor', 'org.springframework.mobile.device.site.SitePreferenceHandlerMethodArgumentResolver' (OnClassCondition)
+
+   SocialWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.social.connect.web.ConnectController', 'org.springframework.social.config.annotation.SocialConfigurerAdapter' (OnClassCondition)
+
+   SolrAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.solr.client.solrj.impl.HttpSolrClient', 'org.apache.solr.client.solrj.impl.CloudSolrClient' (OnClassCondition)
+
+   SolrRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.solr.client.solrj.SolrClient', 'org.springframework.data.solr.repository.SolrRepository' (OnClassCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.application.admin.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
+   SpringDataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter' (OnClassCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.spring4.SpringTemplateEngine' (OnClassCondition)
+
+   TransactionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TwitterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.social.config.annotation.SocialConfigurerAdapter', 'org.springframework.social.twitter.connect.TwitterConnectionFactory' (OnClassCondition)
+
+   ValidationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.validation.executable.ExecutableValidator' (OnClassCondition)
+
+   WebClientAutoConfiguration.RestTemplateConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter' (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+   WebSocketAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.websocket.server.ServerContainer' (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.transaction.TransactionManager', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+[DEBUG] Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+[INFO] Started DemoApplicationTests in 3.872 seconds (JVM running for 6.01)
+[DEBUG] Storing ApplicationContext in cache under key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+[DEBUG] Before test method: context [DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@38c5cc4c, testMethod = testDivision2@DemoApplicationTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+[DEBUG] After test method: context [DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@38c5cc4c, testMethod = testDivision2@DemoApplicationTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+[DEBUG] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+[DEBUG] Performing dependency injection for test context [[DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@16414e40, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+[DEBUG] Before test method: context [DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@16414e40, testMethod = testDivision@DemoApplicationTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+[DEBUG] After test method: context [DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@16414e40, testMethod = testDivision@DemoApplicationTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+[DEBUG] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+[DEBUG] Performing dependency injection for test context [[DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@74bada02, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+[DEBUG] Before test method: context [DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@74bada02, testMethod = contextLoads@DemoApplicationTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+[DEBUG] Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+[DEBUG] Spring test ApplicationContext cache statistics: [DefaultContextCache@e70f13a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+[DEBUG] Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+[DEBUG] After test method: context [DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@74bada02, testMethod = contextLoads@DemoApplicationTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] After test class: context [DefaultTestContext@43ee72e6 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@23529fee testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6950e31, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@52f759d7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@25bbf683], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 4.552 sec - in com.example.DemoApplicationTests
+[INFO] Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@306cf3ea: startup date [Thu Mar 22 11:57:47 CET 2018]; root of context hierarchy
+[DEBUG] Returning cached instance of singleton bean 'lifecycleProcessor'
+[DEBUG] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b11171f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor,org.springframework.boot.test.mock.mockito.MockitoPostProcessor,demoApplication,org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory,org.springframework.boot.autoconfigure.AutoConfigurationPackages,org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration,org.springframework.boot.autoconfigure.condition.BeanTypeRegistry,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store,org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration,spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties,org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration]; root of factory hierarchy
+[DEBUG] Invoking destroy() on bean with name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[DEBUG] Retrieved dependent beans for bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': [org.springframework.context.annotation.internalConfigurationAnnotationProcessor]
+[INFO] Cobertura: Loaded information on 1 classes.
+[INFO] Cobertura: Saved information on 1 classes.
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO] 
+[INFO] <<< cobertura-maven-plugin:2.7:cobertura (default-cli) < [cobertura]test @ demo <<<
+[INFO] 
+[INFO] 
+[8mha:////4PDgtUSZl4337f3B3spnvdiEvNg1fTOIhss026Q/lph+AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- cobertura-maven-plugin:2.7:cobertura (default-cli) @ demo ---
+[INFO] Cobertura 2.1.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Cobertura: Loaded information on 1 classes.
+Report time: 365ms
+
+[INFO] Cobertura Report generation was successful.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.670 s
+[INFO] Finished at: 2018-03-22T11:57:54+01:00
+[INFO] ------------------------------------------------------------------------
+Recording test results
+[Cobertura] Publishing Cobertura coverage report...
+
+[Cobertura] Publishing Cobertura coverage results...
+
+[Cobertura] Cobertura coverage report found.
+
+Finished: SUCCESS

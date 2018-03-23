@@ -1,0 +1,13 @@
+commit ea8d78b5b6a1024b67f3989a7b5386a023f14025
+tree 032b180fa331fafe478cb09f99e0baa3375fc65b
+parent 76d08e1779c34a0a3975c63e23dcbe981dfc45e1
+author root <mvincent@sigma.fr> 2018-03-22 12:03:09 +0100
+committer root <mvincent@sigma.fr> 2018-03-22 12:03:09 +0100
+
+    	modified:   bin/com/example/DemoApplicationTests.class 	modified:  
+    src/test/java/com/example/DemoApplicationTests.java
+
+
+
+:100644 100644 fcd9709144d1e0266420c991c5c5e57c4ece4288 c83e1123f70ca0cf91e68a1b3b8f8171840fb434 M	bin/com/example/DemoApplicationTests.class
+:100644 100644 64e78fd24e26463f7763457e797dadcd80b67c44 ce3e32a8c1f2c549900e7545c7b71048aed317db M	src/test/java/com/example/DemoApplicationTests.java

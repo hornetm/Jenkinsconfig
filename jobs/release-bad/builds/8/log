@@ -1,0 +1,25 @@
+Started by user [8mha:////4L3tsnRPsefmDY0U8v8BjLb6Gr9PBjn9hDnRb+cK0K4/AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/release-bad
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/hornetm/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/hornetm/sample-spring-boot.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/hornetm/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 801410e1646f3ee6cfb3c24504970ffb78eb244f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 801410e1646f3ee6cfb3c24504970ffb78eb244f
+Commit message: "modified:   bin/com/example/DemoApplicationTests.class modified:   src/test/java/com/example/DemoApplicationTests.java"
+ > git rev-list --no-walk 801410e1646f3ee6cfb3c24504970ffb78eb244f # timeout=10
+[release-bad] $ /bin/sh -xe /tmp/jenkins3456447805609441300.sh
++ grep -i SNAPSHOT pom.xml
++ sed -e s/<version>//g
++ awk (print $2)
++ cut -d - -f1
++ sed -e s/<\/version>//g
+awk: line 1: syntax error at or near print
++ version=
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
